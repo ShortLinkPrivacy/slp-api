@@ -116,6 +116,9 @@ routes.post("/:realm", (req, res) => {
 
     realm = req.params.realm;
 
+    logger.trace("headers: ", req.headers);
+    logger.trace("body: ", req.body);
+
     if ( realm == 'm' ) {
         add = db.addMessage;
     } else if ( realm == 'k' ) {
