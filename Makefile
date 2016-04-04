@@ -20,7 +20,6 @@ install:
 	$(TSD) install
 
 build:
-	$(TSC) -d app.ts
 	$(TSC)
 
 clean:
