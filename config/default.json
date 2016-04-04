@@ -1,0 +1,14 @@
+{
+  "name": "Short link privacy API",
+  "log4js": {
+    "appenders": [ { "type": "console" } ],
+    "level": "TRACE"
+  },
+  "mongo": {
+    "url": "mongodb://localhost:27017/slp"
+  },
+  "express": {
+    "port": 5000
+  },
+  "maxMessageLen": 10000
+}

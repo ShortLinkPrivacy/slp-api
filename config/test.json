@@ -1,0 +1,10 @@
+{
+  "log4js": {
+    "appenders": []
+  },
+  "mongo": {
+    "url": "mongodb://localhost:27017/slp_test"
+  },
+  "maxMessageLen": 100
+}
+

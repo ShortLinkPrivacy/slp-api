@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "./typings/tsd.d.ts",
+        "./db.ts",
+        "./app.ts",
+        "t/routes.ts"
+    ]
+}
