@@ -1,6 +1,6 @@
 TSC=$(shell which tsc)
 NODE=$(shell which node)
-APP=server.js
+APP=app.js
 MOCHA=$(shell which mocha)
 NPM=$(shell which npm)
 TSD=$(shell which tsd)
