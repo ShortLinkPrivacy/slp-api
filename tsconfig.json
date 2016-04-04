@@ -11,6 +11,7 @@
     "files": [
         "./typings/tsd.d.ts",
         "./db.ts",
+        "./application.ts",
         "./app.ts",
         "t/routes.ts"
     ]
