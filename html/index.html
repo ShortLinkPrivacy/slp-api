@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Short Link Privacy</title>
+    <style type="text/css">
+      body { font-family: sans-serif; background-color: #fff; }
+      #content, nav { width: 560px; margin-left: auto; margin-right: auto; }
+      nav { text-align: right; background: #eee; padding: 3px; }
+      h2 { color: #777; }
+      .center { text-align: center; }
+      #watch { display: block; width: 100%; font-size: 2.0em; text-align: center; }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <a href="https://chrome.google.com/webstore/detail/short-link-privacy/kkhoekeemmabphdemkfakkjjmpfkjocm">chrome extension</a> | <a href="mailto:slp@xnix.co">email</a>
+    </nav>
+
+    <div id="content">
+      <h1>Short Link Privacy</h1>
+      <h2>Browser to browser encryption for the web using PGP and short links</h2>
+      <p>
+        Short Link Privacy (SLP) provides an easy and convenient way to encrypt one's web communications. It works in social media sites, web based email clients, forums, bulletin boards and any other web based communication tools.
+      </p>
+
+      <a href="#" id="watch">watch video</a>
+
+      <p>
+      The encryption of the message happens in the browser. The already encrypted message is then stored on the SLP server, which returns a short identifying link. This link fits most web based communication tools, even if they limit the number of characters per message (Twitter, Slack). Once posted, this "magic" link will automatically expand into its original, unencrypted contents right in your browser, so you and the other party can easily follow the conversation.
+      </p>
+
+      <p>
+      It is important to note that since the encryption and decryption is done in the browser using yours and the other party's PGP keys, nobody else can read the original contents of your message. This allows for easy privacy in Facebook, Twitter, Slack, Gmail, etc.
+      </p>
+
+      <p>
+      Additionally, you can set expiration for your short link, which causes your message to self-destruct at the end of its life.
+      </p>
+
+      <p>
+      You can specify one or multiple recipients for your message which is convenient if you're talking to a forum.
+      </p>
+
+      <p>
+      You should install this extension if you would like to have the ability to send truly private messages to anyone on the web. It has been tested on Gmail, Facebook, Slack and Twitter, but it should work pretty much everywhere.
+      </p>
+      <div class="center">
+        <a href="https://chrome.google.com/webstore/detail/short-link-privacy/kkhoekeemmabphdemkfakkjjmpfkjocm"><img src="chrome.png" border="0"></a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var iframe = document.createElement('iframe');
+      iframe.width = 560;
+      iframe.height = 315;
+      iframe.src = "https://www.youtube.com/embed/W_rPlyM1VPs?autoplay=1";
+      iframe.setAttribute('frameborder', 0);
+      iframe.setAttribute('allowfullscreen', 'yes');
+
+      document.getElementById('watch').addEventListener('click', function(e) {
+        e.preventDefault();
+        this.innerHTML = "";
+        this.appendChild(iframe);
+      });
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74656221-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
