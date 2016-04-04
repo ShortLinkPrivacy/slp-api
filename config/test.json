@@ -5,6 +5,9 @@
   "mongo": {
     "url": "mongodb://localhost:27017/slp_test"
   },
+  "express": {
+    "port": 5010
+  },
   "maxMessageLen": 100
 }
 
