@@ -148,7 +148,7 @@ routes.post("/:realm", (req, res) => {
         return;
     }
 
-    item.ip = req.ip;
+    item.ip = req.header('x-real-ip');
     item.createdDate = new Date();
 
     add(item, (error, m) => {
