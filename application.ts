@@ -110,7 +110,7 @@ routes.get("/:realm/:id", (req, res) => {
             if (item.timeToLive) {
                 var now = new Date();
                 var createdDate = item.createdDate;
-                if (createdDate.getTime() + item.timeToLive < now.getTime()) {
+                if (createdDate.getTime() + item.timeToLive * 1000 < now.getTime()) {
                     res.statusCode = 410;
                     res.send("Expired");
                     return;
